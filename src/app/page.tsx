@@ -226,10 +226,10 @@ export default function Home() {
             >
               <div className="absolute inset-0 rounded-full bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl z-0" />
               <Image
-                src="/images/bitmoji.png"
+                src="/portfolio/images/bitmoji.png"
                 alt="Tooba's Bitmoji"
-                fill
-                sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, (max-width: 1024px) 160px, 224px"
+                width={300}
+                height={300}
                 className="object-contain relative z-10 rounded-full shadow-lg"
                 priority
               />
