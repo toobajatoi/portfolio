@@ -83,7 +83,7 @@ const experiences = [
     ]
   },
   {
-    title: "Animation Designer",
+    title: "Illustrator & Animation Designer",
     company: "Freelance",
     period: "Jun 2020 -- Present",
     location: "Remote",
@@ -91,7 +91,10 @@ const experiences = [
     emoji: "🎨",
     link: "https://folio.procreate.com/tmax_artistic",
     description: [
-      "Created high-quality animations for Dranlingo (Chinese learning app), Guitar, Majaal, and Musavir music videos, enhancing user engagement and visual storytelling"
+      "Created 2D animations and illustrations for different clients. Worked on music videos, boosting user engagement through expressive visuals and storytelling.",
+      "Designed logos and brand assets for multiple startups and clients, contributing to strong brand identity.",
+      "Developed product design concepts, UI mockups, and visual assets for apps, social media, and promotional content.",
+      "Collaborated with cross-functional teams to ensure design consistency and smooth asset integration."
     ]
   }
 ];
