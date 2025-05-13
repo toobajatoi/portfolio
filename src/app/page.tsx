@@ -85,7 +85,7 @@ const experiences = [
   {
     title: "Animation Designer",
     company: "Freelance",
-    period: "2023 -- Present",
+    period: "Jun 2020 -- Present",
     location: "Remote",
     type: "Contract",
     emoji: "🎨",
