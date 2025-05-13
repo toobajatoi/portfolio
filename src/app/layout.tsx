@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   title: 'Tooba Jatoi - Portfolio',
   description: 'AI Research Architect & Creative Director',
   icons: {
-    icon: '/portfolio/images/bitmoji.png',
+    icon: [
+      { url: '/portfolio/images/bitmoji.png', type: 'image/png' },
+      { url: '/portfolio/favicon.ico', type: 'image/x-icon' }
+    ],
     apple: '/portfolio/images/bitmoji.png',
   },
 }
@@ -28,9 +31,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="light">
-      <head>
-        <link rel="icon" type="image/png" href="/images/bitmoji.png" />
-      </head>
       <body className={inter.className + ' ' + jetbrainsMono.variable}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="min-h-screen bg-white dark:bg-black">
