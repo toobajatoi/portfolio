@@ -43,10 +43,11 @@ const experiences = [
     emoji: "🤖",
     link: "https://www.linkedin.com/company/supportiyo/?viewAsMember=true",
     description: [
-      "Architected and deployed scalable AI automation flows using FastAPI, Zapier, and Redis, reducing manual tasks by 60%",
-      "Engineered RESTful APIs for booking logic and calendar integration, achieving 99.9% uptime and 200ms response time",
-      "Developed real-time Emotion & Tone Detector using BERT models, achieving 92% accuracy across 3 languages",
-      "Led end-to-end design strategy and UI/UX overhaul, resulting in 40% increase in user engagement"
+      "Built real-time automation flows using FastAPI, Zapier, and Redis for scheduling and booking.",
+      "Developed scalable APIs with Google Calendar integration and webhook support.",
+      "Led LLM-based R&D and built a real-time Emotion & Tone Detector using BERT with multilingual support.",
+      "Redesigned Supportiyo's website and dashboard UI/UX, improving usability and visual consistency.",
+      "Created a scalable design system and delivered high-fidelity prototypes for seamless developer handoff."
     ]
   },
   {
