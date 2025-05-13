@@ -13,8 +13,12 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Tooba Jatoi - AI Research Architect & Creative Director',
-  description: 'Portfolio showcasing AI research, creative direction, and innovative solutions.',
+  title: 'Tooba Jatoi - Portfolio',
+  description: 'AI Research Architect & Creative Director',
+  icons: {
+    icon: '/portfolio/images/bitmoji.png',
+    apple: '/portfolio/images/bitmoji.png',
+  },
 }
 
 export default function RootLayout({
