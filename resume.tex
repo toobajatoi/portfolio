@@ -1,0 +1,196 @@
+  %-------------------------
+  % Resume in Latex
+  % Author: Tooba Jatoi
+  %-------------------------
+
+  \documentclass[letterpaper,11pt]{article}
+
+  \usepackage{latexsym}
+  \usepackage[empty]{fullpage}
+  \usepackage{titlesec}
+  \usepackage{marvosym}
+  \usepackage[usenames,dvipsnames]{color}
+  \usepackage{enumitem}
+  \usepackage[hidelinks]{hyperref}
+  \usepackage{fancyhdr}
+  \usepackage[english]{babel}
+  \usepackage{tabularx}
+  \usepackage{multicol}
+  \usepackage{fontawesome5}
+
+  \setlength{\multicolsep}{-2pt}
+
+  \pagestyle{fancy}
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+
+  % Adjust margins
+  \addtolength{\oddsidemargin}{-0.6in}
+  \addtolength{\evensidemargin}{-0.5in}
+  \addtolength{\textwidth}{1.19in}
+  \addtolength{\topmargin}{-.7in}
+  \addtolength{\textheight}{1.4in}
+
+  \urlstyle{same}
+
+  \raggedbottom
+  \raggedright
+  \setlength{\tabcolsep}{0in}
+
+  % Sections formatting
+  \titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+  }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+  % Custom commands
+  \newcommand{\resumeItem}[1]{
+    \item\small{
+      {#1 \vspace{-2pt}}
+    }
+  }
+
+  \newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+      \end{tabular*}\vspace{-7pt}
+  }
+
+  \newcommand{\resumeSubSubheading}[2]{
+      \item
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+      \end{tabular*}\vspace{-7pt}
+  }
+
+  \newcommand{\resumeProjectHeading}[2]{
+      \item
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+      \end{tabular*}\vspace{-7pt}
+  }
+
+  \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+  \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+  \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeItemListStart}{\begin{itemize}}
+  \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+  %-------------------------------------------
+  %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+  \begin{document}
+
+  %----------HEADING----------
+  \begin{center}
+      \textbf{\Huge \scshape Tooba Jatoi} \\ \vspace{3pt}
+      \small
+      \faEnvelope \hspace{0.2em} toobajatoi44@gmail.com $|$ 
+      \faLinkedin \hspace{0.2em} \href{https://www.linkedin.com/in/tooba-jatoi44}{linkedin.com/in/tooba-jatoi44} $|$
+      \faBehance \hspace{0.2em} \href{https://www.behance.net/toobajatoi}{behance.net/toobajatoi} $|$
+      \href{https://folio.procreate.com/tmax_artistic}{\faGlobe \hspace{0.2em} folio.procreate.com/tmax_artistic}
+  \end{center}
+
+  %-----------EDUCATION-----------
+  \section{Education}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {National University of Computer and Emerging Sciences}{Karachi, Pakistan}
+        {Bachelor of Science in Computer Science}{2021 -- Present}
+      \resumeSubheading
+        {Beaconhouse}{Karachi, Pakistan}
+        {Advanced Level (Biology, Physics, Maths, Urdu, Chemistry)}{2019 -- 2021}
+    \resumeSubHeadingListEnd
+
+  %-----------EXPERIENCE-----------
+  \section{Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {AI Research Architect \& Creative Director}{Remote}
+        {Supportiyo}{Dec 2024 -- Present}
+        \resumeItemListStart
+          \resumeItem{Architected and deployed scalable AI automation flows using FastAPI, Zapier, and Redis, reducing manual tasks by 60\%}
+          \resumeItem{Engineered RESTful APIs for booking logic and calendar integration, achieving 99.9\% uptime and 200ms response time}
+          \resumeItem{Developed real-time Emotion \& Tone Detector using BERT models, achieving 92\% accuracy across 3 languages}
+          \resumeItem{Led end-to-end design strategy and UI/UX overhaul, resulting in 40\% increase in user engagement}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Animation Designer}{Remote}
+        {Freelance}{2023 -- Present}
+        \resumeItemListStart
+          \resumeItem{Created high-quality animations for Dranlingo (Chinese learning app), Guitar, Majaal, and Musavir music videos, enhancing user engagement and visual storytelling}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Game Designer}{Pakistan}
+        {M-Labs}{Jun 2024 -- Aug 2024}
+        \resumeItemListStart
+          \resumeItem{Designed and implemented game mechanics using Unity, resulting in 85\% positive user feedback}
+          \resumeItem{Developed UI in Figma and created game assets using Illustrator, Blender, and Unity}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {User Experience Designer}{Remote}
+        {TheForgeDev}{Jun 2023 -- Jul 2024}
+        \resumeItemListStart
+          \resumeItem{Implemented responsive web design using modern CSS3 and JavaScript, improving mobile engagement by 45\%}
+          \resumeItem{Conducted user research and A/B testing, leading to 30\% increase in conversion rates}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+  %-----------SKILLS-----------
+  \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+        \textbf{Languages}{: Python, JavaScript, TypeScript, C/C++, HTML5, CSS3, SQL, Shell Scripting} \\
+        \textbf{Frameworks \& Libraries}{: FastAPI, React, BERT, Redis, Zapier, LLM, Prompt Engineering} \\
+        \textbf{Tools \& Technologies}{: Git, Docker, REST APIs, Webhooks, CI/CD, Agile Methodologies} \\
+        \textbf{Design \& Prototyping}{: Figma, Adobe Creative Suite, Blender, Procreate, UI/UX Design} \\
+        \textbf{Soft Skills}{: Technical Leadership, Project Management, Problem Solving, Team Collaboration}
+      }}
+    \end{itemize}
+
+  %-----------PROJECTS-----------
+  \section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{BrainPan - Real-Time Emotion \& Tone Detector} $|$ \emph{Python, BERT, FastAPI, Redis}}{May 2025}
+        \resumeItemListStart
+          \resumeItem{Built full-stack, real-time emotion and tone detection system using fine-tuned transformer models}
+          \resumeItem{Implemented multilingual support (English, Urdu, experimental Arabic)}
+          \resumeItem{Developed modular APIs with real-time frontend for assistant integration}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{LLM-Driven Scheduling \& Workflow Automation Engine} $|$ \emph{Python, FastAPI, Redis, Zapier}}{Apr 2025}
+        \resumeItemListStart
+          \resumeItem{Implemented LLM-driven automation workflows using prompt engineering and API orchestration}
+          \resumeItem{Developed real-time AI-powered scheduling assistant managing booking logic and calendar sync}
+          \resumeItem{Delivered scalable APIs with webhook integrations and external tool connectivity}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Redis-Based Stimulation} $|$ \emph{Python, Redis}}{May 2025}
+        \resumeItemListStart
+          \resumeItem{Developed real-time simulation using Redis to model task pipelines and backend flow logic}
+          \resumeItem{Implemented pub/sub and queue structures for latency-sensitive task management}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Supportiyo Dashboard UI/UX} $|$ \emph{Figma, React, TypeScript}}{Dec 2024 -- Jan 2025}
+        \resumeItemListStart
+          \resumeItem{Redesigned the Supportiyo Dashboard with a modern, user-centric UI/UX focused on clarity, responsiveness, and scalability}
+          \resumeItem{Enhanced user flows and reduced friction by implementing intuitive layouts and interactive components}
+          \resumeItem{Ensured seamless navigation and alignment with Supportiyo's automation-first product vision}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+  \end{document} 
