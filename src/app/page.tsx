@@ -136,8 +136,8 @@ const education = [
     emoji: "🎓"
   },
   {
-    degree: "Advanced Level",
-    school: "Beaconhouse",
+    degree: "Advanced Level GCSE",
+    school: "Beaconhouse School System",
     location: "Hyderabad, Pakistan",
     period: "2019 -- 2021",
     emoji: "📚"
