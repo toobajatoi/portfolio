@@ -273,7 +273,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed font-sans px-2 sm:px-0"
           >
-            Junior CS major who merges logic, design, and AI sorcery—because why pick one when you can stress over all three? From clean UIs to real-time backend chaos, I make smart stuff that (usually) works.
+            CS major who merges logic, design, and AI sorcery, because why pick one when you can stress over all three? From clean UIs to real-time backend chaos, I make smart stuff that (usually) works.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}
