@@ -138,7 +138,7 @@ const education = [
   {
     degree: "Advanced Level",
     school: "Beaconhouse",
-    location: "Karachi, Pakistan",
+    location: "Hyderabad, Pakistan",
     period: "2019 -- 2021",
     emoji: "📚"
   }
