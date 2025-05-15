@@ -23,7 +23,7 @@ A modern, interactive portfolio website built with Next.js, TypeScript, and Tail
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/toobajatoi/portfolio
 cd portfolio
 ```
 
