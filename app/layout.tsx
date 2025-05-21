@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   description: 'AI Research Architect & Creative Director',
   icons: {
     icon: [
-      { url: '/images/bitmoji.png', type: 'image/png' },
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/portfolio/images/bitmoji.png', type: 'image/png' },
+      { url: '/portfolio/favicon.ico', type: 'image/x-icon' }
     ],
-    apple: '/images/bitmoji.png',
+    apple: '/portfolio/images/bitmoji.png',
   },
 }
 
