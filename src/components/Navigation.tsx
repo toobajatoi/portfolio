@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
@@ -17,6 +17,8 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [showFallback, setShowFallback] = useState(false);
+  const bitmojiRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
@@ -46,7 +48,26 @@ export default function Navigation() {
               onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow">
-                <Image src="/portfolio/images/bitmoji.png" alt="Tooba Bitmoji" width={40} height={40} className="object-cover" />
+                <Image
+                  ref={bitmojiRef}
+                  src="/images/bitmoji.png"
+                  alt="Tooba Bitmoji"
+                  width={40}
+                  height={40}
+                  className="object-cover"
+                  onError={() => setShowFallback(true)}
+                  style={{ display: showFallback ? 'none' : 'block' }}
+                />
+                {showFallback && (
+                  <img
+                    id="bitmoji-fallback"
+                    src="/images/bitmoji.png"
+                    alt="Tooba Bitmoji Fallback"
+                    width={40}
+                    height={40}
+                    style={{ display: 'block' }}
+                  />
+                )}
               </div>
             </a>
             <div className="flex items-center gap-8">
