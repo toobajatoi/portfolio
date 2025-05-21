@@ -230,7 +230,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 rounded-full bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl z-0" />
               <Image
-                src="/images/bitmoji.png"
+                src="images/bitmoji.png"
                 alt="Tooba's Bitmoji"
                 width={300}
                 height={300}
