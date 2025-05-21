@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { JetBrains_Mono } from 'next/font/google'
-import '@/styles/globals.css'
+import './globals.css'
 import { ThemeProvider } from 'next-themes'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   description: 'AI Research Architect & Creative Director',
   icons: {
     icon: [
-      { url: '/portfolio/images/bitmoji.png', type: 'image/png' },
-      { url: '/portfolio/favicon.ico', type: 'image/x-icon' }
+      { url: '/images/bitmoji.png', type: 'image/png' },
+      { url: '/favicon.ico', type: 'image/x-icon' }
     ],
-    apple: '/portfolio/images/bitmoji.png',
+    apple: '/images/bitmoji.png',
   },
 }
 
