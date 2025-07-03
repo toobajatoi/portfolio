@@ -50,7 +50,7 @@ export default function Navigation() {
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow">
                 <img
                   ref={bitmojiRef}
-                  src="/images/bitmoji.png"
+                  src="images/bitmoji.png"
                   alt="Tooba Bitmoji"
                   width={40}
                   height={40}
