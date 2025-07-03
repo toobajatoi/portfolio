@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description: 'AI Research Architect & Creative Director',
   icons: {
     icon: [
-      { url: '/images/bitmoji.png', type: 'image/png' }
+      { url: '/portfolio/images/bitmoji.png', type: 'image/png' }
     ],
-    apple: '/images/bitmoji.png',
+    apple: '/portfolio/images/bitmoji.png',
   },
 }
 

@@ -50,7 +50,7 @@ export default function Navigation() {
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow">
                 <Image
                   ref={bitmojiRef}
-                  src="/images/bitmoji.png"
+                  src="/portfolio/images/bitmoji.png"
                   alt="Tooba Bitmoji"
                   width={40}
                   height={40}
@@ -61,7 +61,7 @@ export default function Navigation() {
                 {showFallback && (
                   <img
                     id="bitmoji-fallback"
-                    src="/images/bitmoji.png"
+                    src="/portfolio/images/bitmoji.png"
                     alt="Tooba Bitmoji Fallback"
                     width={40}
                     height={40}
