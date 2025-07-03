@@ -54,9 +54,9 @@ export default function Navigation() {
                   alt="Tooba Bitmoji"
                   width={40}
                   height={40}
-                  className="object-cover"
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '9999px', zIndex: 10, display: showFallback ? 'none' : 'block' }}
+                  className="relative shadow-lg"
                   onError={() => setShowFallback(true)}
-                  style={{ display: showFallback ? 'none' : 'block' }}
                 />
                 {showFallback && (
                   <img

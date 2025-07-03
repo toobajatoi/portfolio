@@ -234,7 +234,8 @@ export default function Home() {
                 alt="Tooba's Bitmoji"
                 width={300}
                 height={300}
-                className="object-contain relative z-10 rounded-full shadow-lg"
+                style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '9999px', zIndex: 10 }}
+                className="relative shadow-lg"
               />
               <div className="absolute inset-0 rounded-full bg-indigo-500/0 group-hover:bg-indigo-500/10 transition-colors duration-300" />
             </a>
