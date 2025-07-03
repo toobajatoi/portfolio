@@ -229,13 +229,12 @@ export default function Home() {
               className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-56 lg:h-56 rounded-full bg-white/80 dark:bg-gray-900/80 p-1 shadow-xl flex items-center justify-center group-hover:animate-bitmoji-bounce backdrop-blur-xl border-2 border-white/20 dark:border-indigo-500/20 cursor-pointer transition-transform hover:scale-105"
             >
               <div className="absolute inset-0 rounded-full bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl z-0" />
-              <Image
+              <img
                 src="/images/bitmoji.png"
                 alt="Tooba's Bitmoji"
                 width={300}
                 height={300}
                 className="object-contain relative z-10 rounded-full shadow-lg"
-                priority
               />
               <div className="absolute inset-0 rounded-full bg-indigo-500/0 group-hover:bg-indigo-500/10 transition-colors duration-300" />
             </a>
