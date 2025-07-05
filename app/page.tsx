@@ -16,20 +16,29 @@ const fadeInUp = {
 
 const projects = [
   {
+    title: 'Lead Generation Web Scraper',
+    description: 'A full-stack lead generation application that scrapes Google Maps and business websites for contact information, including emails, social media, and key personnel. Built with Python, Flask, and Selenium, and designed for easy deployment with Docker.',
+    link: 'https://github.com/toobajatoi/lead-gen'
+  },
+  {
     title: 'BrainPan: Real-time Emotion & Tone Detector',
-    description: 'Developed a real-time emotion and tone detection system using BERT models, achieving 92% accuracy across 3 languages. Integrated with RESTful APIs for seamless deployment.'
+    description: 'Developed a real-time emotion and tone detection system using BERT models, achieving 92% accuracy across 3 languages. Integrated with RESTful APIs for seamless deployment.',
+    link: 'https://github.com/toobajatoi/BrainPan'
   },
   {
     title: 'Real-time Sarcasm Detector',
-    description: 'Implemented a real-time sarcasm detection system using machine learning and audio processing techniques. Captures audio input, extracts relevant features, and uses a trained model to classify whether the speech contains sarcasm with high accuracy.'
+    description: 'Implemented a real-time sarcasm detection system using machine learning and audio processing techniques. Captures audio input, extracts relevant features, and uses a trained model to classify whether the speech contains sarcasm with high accuracy.',
+    link: 'https://github.com/toobajatoi/real-time-sarcasm-detector'
   },
   {
     title: 'Vocal Lock',
-    description: 'Built a voice authentication system using Python, Whisper for speech-to-text, and machine learning for voice feature extraction and verification. Includes both command-line and Streamlit web interfaces for user enrollment and authentication.'
+    description: 'Built a voice authentication system using Python, Whisper for speech-to-text, and machine learning for voice feature extraction and verification. Includes both command-line and Streamlit web interfaces for user enrollment and authentication.',
+    link: 'https://github.com/toobajatoi/vocal-lock2'
   },
   {
     title: 'Tone Switcher',
-    description: 'Developed a professional voice and text analysis tool that detects emotions from voice recordings and analyzes sentiment from text input. Provides real-time analysis and visualizations for both audio and text inputs with intuitive user interface.'
+    description: 'Developed a professional voice and text analysis tool that detects emotions from voice recordings and analyzes sentiment from text input. Provides real-time analysis and visualizations for both audio and text inputs with intuitive user interface.',
+    link: 'https://github.com/toobajatoi/tone-switcher'
   },
   {
     title: 'Supportiyo Dashboard',
@@ -408,10 +417,19 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="card glass-effect border-2 border-white/20 dark:border-pink-500/20 hover:border-indigo-200 dark:hover:border-pink-500/40 p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-xl bg-white/30 dark:bg-gray-900/30"
+                className={`card glass-effect border-2 border-white/20 dark:border-pink-500/20 hover:border-indigo-200 dark:hover:border-pink-500/40 p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-xl bg-white/30 dark:bg-gray-900/30 ${project.link ? 'cursor-pointer hover:scale-105' : ''}`}
+                onClick={project.link ? () => window.open(project.link, '_blank') : undefined}
               >
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 dark:text-white font-sans">{project.title}</h3>
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white font-sans">{project.title}</h3>
+                  {project.link && (
+                    <FaGithub className="text-indigo-600 dark:text-indigo-400 text-lg sm:text-xl hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors" />
+                  )}
+                </div>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-sans">{project.description}</p>
+                {project.link && (
+                  <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-2 font-medium">Click to view project →</p>
+                )}
               </motion.div>
             ))}
           </div>
