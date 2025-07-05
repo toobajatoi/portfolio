@@ -20,6 +20,18 @@ const projects = [
     description: 'Developed a real-time emotion and tone detection system using BERT models, achieving 92% accuracy across 3 languages. Integrated with RESTful APIs for seamless deployment.'
   },
   {
+    title: 'Real-time Sarcasm Detector',
+    description: 'Implemented a real-time sarcasm detection system using machine learning and audio processing techniques. Captures audio input, extracts relevant features, and uses a trained model to classify whether the speech contains sarcasm with high accuracy.'
+  },
+  {
+    title: 'Vocal Lock',
+    description: 'Built a voice authentication system using Python, Whisper for speech-to-text, and machine learning for voice feature extraction and verification. Includes both command-line and Streamlit web interfaces for user enrollment and authentication.'
+  },
+  {
+    title: 'Tone Switcher',
+    description: 'Developed a professional voice and text analysis tool that detects emotions from voice recordings and analyzes sentiment from text input. Provides real-time analysis and visualizations for both audio and text inputs with intuitive user interface.'
+  },
+  {
     title: 'Supportiyo Dashboard',
     description: 'Designed and implemented a scalable dashboard for Supportiyo, leading the end-to-end UI/UX overhaul and increasing user engagement by 40%.'
   },
@@ -173,6 +185,9 @@ export default function Home() {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 100], [1, 0]);
 
+  const isGithubPages = typeof window !== 'undefined' && window.location.hostname === 'toobajatoi.github.io';
+  const bitmojiPath = isGithubPages ? '/portfolio/images/bitmoji.png' : '/images/bitmoji.png';
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -230,7 +245,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 rounded-full bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl z-0" />
               <img
-                src="/portfolio/images/bitmoji.png"
+                src={bitmojiPath}
                 alt="Tooba's Bitmoji"
                 width={300}
                 height={300}
