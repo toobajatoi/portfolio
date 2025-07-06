@@ -195,7 +195,7 @@ export default function Home() {
   const opacity = useTransform(scrollY, [0, 100], [1, 0]);
 
   const isGithubPages = typeof window !== 'undefined' && window.location.hostname === 'toobajatoi.github.io';
-  const bitmojiPath = isGithubPages ? '/portfolio/images/bitmoji.png' : '/images/bitmoji.png';
+  const bitmojiPath = process.env.NODE_ENV === 'production' ? '/portfolio/images/bitmoji.png' : '/images/bitmoji.png';
 
   useEffect(() => {
     const handleScroll = () => {
