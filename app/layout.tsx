@@ -31,6 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="light">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body className={inter.className + ' ' + jetbrainsMono.variable}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="min-h-screen bg-white dark:bg-black">
