@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="light">
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href={process.env.NODE_ENV === 'production' ? '/portfolio/favicon.png' : '/favicon.png'} type="image/png" />
       </head>
       <body className={inter.className + ' ' + jetbrainsMono.variable}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
