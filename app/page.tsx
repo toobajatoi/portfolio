@@ -26,6 +26,11 @@ const projects = [
     link: 'https://github.com/toobajatoi/BrainPan'
   },
   {
+    title: 'Jobflux - AI Job Scraper & Outreach Automator',
+    description: 'A free Chrome extension that auto-detects jobs on LinkedIn, Wellfound, or Indeed, scrapes key job info, and generates customized cover letters and outreach messages using free LLM APIs. Enables direct sending via LinkedIn DM, email, or Notion save.',
+    link: 'https://github.com/toobajatoi/jobflux'
+  },
+  {
     title: 'Real-time Sarcasm Detector',
     description: 'Implemented a real-time sarcasm detection system using machine learning and audio processing techniques. Captures audio input, extracts relevant features, and uses a trained model to classify whether the speech contains sarcasm with high accuracy.',
     link: 'https://github.com/toobajatoi/real-time-sarcasm-detector'
