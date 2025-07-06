@@ -19,6 +19,8 @@ export default function Navigation() {
   const { theme, setTheme } = useTheme();
   const [showFallback, setShowFallback] = useState(false);
   const bitmojiRef = useRef(null);
+  const isGithubPages = typeof window !== 'undefined' && window.location.hostname === 'toobajatoi.github.io';
+  const bitmojiPath = isGithubPages ? '/portfolio/images/bitmoji.png' : '/images/bitmoji.png';
 
   useEffect(() => {
     setMounted(true);
@@ -50,7 +52,7 @@ export default function Navigation() {
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow">
                 <img
                   ref={bitmojiRef}
-                  src="/portfolio/images/bitmoji.png"
+                  src={bitmojiPath}
                   alt="Tooba Bitmoji"
                   width={40}
                   height={40}
