@@ -22,12 +22,12 @@ const technicalProjects = [
     link: 'https://github.com/toobajatoi/jobflux'
   },
   {
-    title: 'Real-time Sarcasm Detector',
+    title: 'EchoIQ',
     description: 'Implemented a real-time sarcasm detection system using machine learning and audio processing techniques. Captures audio input, extracts relevant features, and uses a trained model to classify whether the speech contains sarcasm with high accuracy.',
     link: 'https://github.com/toobajatoi/real-time-sarcasm-detector'
   },
   {
-    title: 'Tone Switcher',
+    title: 'LingoMod',
     description: 'Developed a professional voice and text analysis tool that detects emotions from voice recordings and analyzes sentiment from text input. Provides real-time analysis and visualizations for both audio and text inputs with intuitive user interface.',
     link: 'https://github.com/toobajatoi/tone-switcher'
   }
