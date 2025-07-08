@@ -6,6 +6,7 @@ import Navigation from '@/components/Navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { FaLinkedin, FaGithub, FaBehance, FaBriefcase, FaTools, FaGraduationCap, FaProjectDiagram, FaCertificate, FaEnvelope } from 'react-icons/fa';
+import { SiAdobeaftereffects } from 'react-icons/si';
 import { Typewriter } from 'react-simple-typewriter';
 
 const fadeInUp = {
@@ -14,7 +15,7 @@ const fadeInUp = {
   transition: { duration: 0.6 }
 };
 
-const projects = [
+const technicalProjects = [
   {
     title: 'Lead Generation Web Scraper',
     description: 'A full-stack lead generation application that scrapes Google Maps and business websites for contact information, including emails, social media, and key personnel. Built with Python, Flask, and Selenium, and designed for easy deployment with Docker.',
@@ -46,16 +47,36 @@ const projects = [
     link: 'https://github.com/toobajatoi/tone-switcher'
   },
   {
-    title: 'Supportiyo Dashboard',
-    description: 'Designed and implemented a scalable dashboard for Supportiyo, leading the end-to-end UI/UX overhaul and increasing user engagement by 40%.'
-  },
-  {
     title: 'LLM Scheduling Engine',
     description: 'Engineered a robust scheduling engine using FastAPI and Redis, achieving 99.9% uptime and 200ms response time for high-volume booking logic.'
+  }
+];
+
+const designProjects = [
+  {
+    title: 'Supportiyo Dashboard',
+    description: 'Designed and implemented a scalable dashboard for Supportiyo, leading the end-to-end UI/UX overhaul and increasing user engagement by 40%. Created intuitive user flows, responsive design systems, and seamless integration with backend services.',
+    link: 'https://www.behance.net/gallery/229851743/Supportiyo-UIUX-Case-Study'
   },
   {
     title: 'DartMania - Mlabs',
-    description: 'Designed and developed DartMania, a mobile game for M-Labs. Responsible for game mechanics, UI/UX, and asset creation using Unity, Figma, Illustrator, and Blender. Achieved 85% positive user feedback and implemented engaging gameplay loops, level design, and visual effects.'
+    description: 'Designed and developed DartMania, a mobile game for M-Labs. Responsible for game mechanics, UI/UX, and asset creation using Unity, Figma, Illustrator, and Blender. Achieved 85% positive user feedback and implemented engaging gameplay loops, level design, and visual effects.',
+    link: 'https://www.behance.net/gallery/206445581/Dart-Mania-Game-Promo-Video'
+  },
+  {
+    title: 'Supportiyo Promo Video',
+    description: 'Created compelling promotional video content for Supportiyo, showcasing the platform\'s features and benefits through engaging visual storytelling. Designed motion graphics, transitions, and visual effects to effectively communicate brand messaging.',
+    link: 'https://www.behance.net/gallery/206443857/Supportiyo-Promo-Video'
+  },
+  {
+    title: 'Spider-Man Across the PAKISTAN',
+    description: 'Created a unique Spider-Man concept design using AI prompt engineering for ideation and concept development. Used Procreate for typography and Adobe Photoshop for final design execution, blending traditional design principles with modern AI-assisted creative workflows.',
+    link: 'https://www.behance.net/gallery/206446173/Spider-Man-Across-the-PAKISTAN'
+  },
+  {
+    title: 'Guitar Music Video - 2D Stop Motion',
+    description: 'Produced engaging 2D stop motion animation for music videos using Procreate for illustration and Adobe After Effects for editing. Created character designs, storyboards, and motion graphics that enhance storytelling and user engagement.',
+    link: 'https://www.behance.net/gallery/206447077/GUITAR-Music-cover-album-2D-stop-motion'
   }
 ];
 
@@ -186,6 +207,10 @@ const certificates = [
   {
     name: 'SQL (Basic) Certificate',
     url: 'https://www.hackerrank.com/certificates/de27adc0932a'
+  },
+  {
+    name: 'M-Lab Summer Jam Completion',
+    url: 'https://drive.google.com/file/d/1TgujRolPw1hNm5-qF90w5XvhG1QY4Gm2/view'
   }
 ];
 
@@ -398,11 +423,15 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
-        {/* Floating Background Blobs */}
+        {/* Enhanced Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/3 left-1/4 w-32 sm:w-48 md:w-72 lg:w-96 h-32 sm:h-48 md:h-72 lg:h-96 bg-pink-200/20 dark:bg-pink-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-float" />
           <div className="absolute bottom-1/4 right-1/3 w-32 sm:w-48 md:w-72 lg:w-96 h-32 sm:h-48 md:h-72 lg:h-96 bg-purple-200/20 dark:bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-float-delayed" />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 sm:w-96 md:w-[500px] lg:w-[600px] h-64 sm:h-96 md:h-[500px] lg:h-[600px] bg-gradient-to-r from-blue-200/10 via-purple-200/10 to-pink-200/10 dark:from-blue-500/5 dark:via-purple-500/5 dark:to-pink-500/5 rounded-full mix-blend-multiply filter blur-3xl animate-float-more-delayed" />
         </div>
+        
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30 dark:opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -415,29 +444,212 @@ export default function Home() {
               Projects
             </h2>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-            {projects.map((project, idx) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className={`card glass-effect border-2 border-white/20 dark:border-pink-500/20 hover:border-indigo-200 dark:hover:border-pink-500/40 p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-xl bg-white/30 dark:bg-gray-900/30 ${project.link ? 'cursor-pointer hover:scale-105' : ''}`}
-                onClick={project.link ? () => window.open(project.link, '_blank') : undefined}
+
+          {/* Technical Projects Section */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-20"
+          >
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex items-center gap-4 mb-12 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border-2 border-blue-200/50 dark:border-blue-500/30 shadow-lg hover:shadow-xl transition-all duration-300"
+              whileHover={{ scale: 1.02 }}
+            >
+              <motion.div 
+                className="p-3 bg-blue-100 dark:bg-blue-900/40 rounded-xl"
+                whileHover={{ rotate: 5, scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white font-sans">{project.title}</h3>
-                  {project.link && (
-                    <FaGithub className="text-indigo-600 dark:text-indigo-400 text-lg sm:text-xl hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors" />
-                  )}
-                </div>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-sans">{project.description}</p>
-                {project.link && (
-                  <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-2 font-medium">Click to view project →</p>
-                )}
+                <FaTools className="text-2xl sm:text-3xl text-blue-600 dark:text-blue-400" />
               </motion.div>
-            ))}
-          </div>
+              <div>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 dark:text-white font-sans">
+                  Technical Projects
+                </h3>
+                <p className="text-sm sm:text-base text-blue-600 dark:text-blue-400 font-medium mt-1">
+                  AI/ML • Web Development • Automation
+                </p>
+              </div>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+              {technicalProjects.map((project, idx) => (
+                <motion.div
+                  key={project.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className={`card glass-effect border-2 border-blue-200/50 dark:border-blue-500/30 hover:border-blue-300 dark:hover:border-blue-400 p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 backdrop-blur-xl bg-white/40 dark:bg-gray-900/40 hover:bg-white/50 dark:hover:bg-gray-900/50 ${project.link ? 'cursor-pointer hover:scale-105 hover:-translate-y-2' : ''}`}
+                  onClick={project.link ? () => window.open(project.link, '_blank') : undefined}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white font-sans mb-2">{project.title}</h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mb-4"></div>
+                    </div>
+                    {project.link && (
+                      <div className="p-3 bg-blue-100 dark:bg-blue-900/40 rounded-xl ml-4">
+                        <FaGithub className="text-blue-600 dark:text-blue-400 text-xl sm:text-2xl hover:text-blue-700 dark:hover:text-blue-300 transition-colors" />
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-sans leading-relaxed">{project.description}</p>
+                  {project.link && (
+                    <div className="mt-6 flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 font-semibold">
+                      <span>View Project</span>
+                      <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Design Projects Section */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="flex items-center gap-4 mb-12 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl border-2 border-purple-200/50 dark:border-purple-500/30 shadow-lg hover:shadow-xl transition-all duration-300"
+              whileHover={{ scale: 1.02 }}
+            >
+              <motion.div 
+                className="p-3 bg-purple-100 dark:bg-purple-900/40 rounded-xl"
+                whileHover={{ rotate: 5, scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+              >
+                <FaBehance className="text-2xl sm:text-3xl text-purple-600 dark:text-purple-400" />
+              </motion.div>
+              <div>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 dark:text-white font-sans">
+                  Design Projects
+                </h3>
+                <p className="text-sm sm:text-base text-purple-600 dark:text-purple-400 font-medium mt-1">
+                  UI/UX • Branding • Animation • Game Design
+                </p>
+              </div>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+              {designProjects.map((project, idx) => (
+                <motion.div
+                  key={project.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className={`card glass-effect border-2 border-purple-200/50 dark:border-purple-500/30 hover:border-purple-300 dark:hover:border-purple-400 p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 backdrop-blur-xl bg-white/40 dark:bg-gray-900/40 hover:bg-white/50 dark:hover:bg-gray-900/50 ${project.link ? 'cursor-pointer hover:scale-105 hover:-translate-y-2' : ''}`}
+                  onClick={project.link ? () => window.open(project.link, '_blank') : undefined}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white font-sans mb-2">{project.title}</h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-4"></div>
+                    </div>
+                    {project.link && (
+                      <div className="p-3 bg-purple-100 dark:bg-purple-900/40 rounded-xl ml-4">
+                        <FaBehance className="text-purple-600 dark:text-purple-400 text-xl sm:text-2xl hover:text-purple-700 dark:hover:text-purple-300 transition-colors" />
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-sans leading-relaxed">{project.description}</p>
+                  
+                  {/* Show tools for different projects */}
+                  {project.title === 'Supportiyo Dashboard' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Figma</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.title === 'DartMania - Mlabs' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Unity</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Figma</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <SiAdobeaftereffects className="text-purple-600 dark:text-purple-400 text-sm" />
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Procreate</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.title === 'Supportiyo Promo Video' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <SiAdobeaftereffects className="text-purple-600 dark:text-purple-400 text-sm" />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.title === 'Guitar Music Video - 2D Stop Motion' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Procreate</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <SiAdobeaftereffects className="text-purple-600 dark:text-purple-400 text-sm" />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.title === 'Spider-Man Across the PAKISTAN' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">AI Prompt Engineering</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Procreate</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Adobe Photoshop</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.link && (
+                    <div className="mt-6 flex items-center gap-2 text-sm text-purple-600 dark:text-purple-400 font-semibold">
+                      <span>View Project</span>
+                      <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
