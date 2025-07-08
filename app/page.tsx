@@ -23,12 +23,12 @@ const technicalProjects = [
   },
   {
     title: 'EchoIQ',
-    description: 'Implemented a real-time sarcasm detection system using machine learning and audio processing techniques. Captures audio input, extracts relevant features, and uses a trained model to classify whether the speech contains sarcasm with high accuracy.',
+    description: 'An intelligent audio analysis platform that leverages machine learning to detect sarcasm and emotional nuances in real-time speech. Uses advanced audio processing techniques and trained models to provide accurate sentiment classification with high precision.',
     link: 'https://github.com/toobajatoi/real-time-sarcasm-detector'
   },
   {
     title: 'LingoMod',
-    description: 'Developed a professional voice and text analysis tool that detects emotions from voice recordings and analyzes sentiment from text input. Provides real-time analysis and visualizations for both audio and text inputs with intuitive user interface.',
+    description: 'A comprehensive language modification platform that analyzes and transforms both voice and text inputs. Features real-time emotion detection, sentiment analysis, and provides intuitive visualizations for enhanced communication insights.',
     link: 'https://github.com/toobajatoi/tone-switcher'
   }
 ];
@@ -66,11 +66,11 @@ const experiences = [
     emoji: "🤖",
     link: "https://www.linkedin.com/company/supportiyo/?viewAsMember=true",
     description: [
-      "Built real-time automation flows using FastAPI, Zapier, and Redis for scheduling and booking.",
-      "Developed scalable APIs with Google Calendar integration and webhook support.",
-      "Led LLM-based R&D and built a real-time Emotion & Tone Detector using BERT with multilingual support.",
-      "Redesigned Supportiyo's website and dashboard UI/UX, improving usability and visual consistency.",
-      "Created a scalable design system and delivered high-fidelity prototypes for seamless developer handoff."
+      "Built real-time automation workflows using FastAPI, Redis, and third-party API integrations for scheduling and event handling.",
+      "Developed scalable backend APIs with support for calendar-based booking, webhook handling, and async task management.",
+      "Led R&D on NLP-based emotion and tone detection using transformer models, with support for multilingual inputs.",
+      "Spearheaded the redesign of a web platform's UI/UX, enhancing usability, responsiveness, and visual consistency across dashboard and marketing site.",
+      "Created a reusable design system and high-fidelity interactive prototypes, ensuring seamless collaboration between design and engineering teams."
     ]
   },
   {
@@ -541,16 +541,7 @@ export default function Home() {
                   <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-sans leading-relaxed">{project.description}</p>
                   
                   {/* Show tools for different projects */}
-                  {project.title === 'Supportiyo Dashboard' && (
-                    <div className="mt-4 flex items-center gap-3">
-                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
-                      <div className="flex items-center gap-2">
-                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
-                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Figma</span>
-                        </div>
-                      </div>
-                    </div>
-                  )}
+
                   
                   {project.title === 'DartMania - Mlabs' && (
                     <div className="mt-4 flex items-center gap-3">
