@@ -17,16 +17,6 @@ const fadeInUp = {
 
 const technicalProjects = [
   {
-    title: 'Lead Generation Web Scraper',
-    description: 'A full-stack lead generation application that scrapes Google Maps and business websites for contact information, including emails, social media, and key personnel. Built with Python, Flask, and Selenium, and designed for easy deployment with Docker.',
-    link: 'https://github.com/toobajatoi/lead-gen'
-  },
-  {
-    title: 'BrainPan: Real-time Emotion & Tone Detector',
-    description: 'Developed a real-time emotion and tone detection system using BERT models, achieving 92% accuracy across 3 languages. Integrated with RESTful APIs for seamless deployment.',
-    link: 'https://github.com/toobajatoi/BrainPan'
-  },
-  {
     title: 'Jobflux - AI Job Scraper & Outreach Automator',
     description: 'A free Chrome extension that auto-detects jobs on LinkedIn, Wellfound, or Indeed, scrapes key job info, and generates customized cover letters and outreach messages using free LLM APIs. Enables direct sending via LinkedIn DM, email, or Notion save.',
     link: 'https://github.com/toobajatoi/jobflux'
@@ -37,27 +27,13 @@ const technicalProjects = [
     link: 'https://github.com/toobajatoi/real-time-sarcasm-detector'
   },
   {
-    title: 'Vocal Lock',
-    description: 'Built a voice authentication system using Python, Whisper for speech-to-text, and machine learning for voice feature extraction and verification. Includes both command-line and Streamlit web interfaces for user enrollment and authentication.',
-    link: 'https://github.com/toobajatoi/vocal-lock2'
-  },
-  {
     title: 'Tone Switcher',
     description: 'Developed a professional voice and text analysis tool that detects emotions from voice recordings and analyzes sentiment from text input. Provides real-time analysis and visualizations for both audio and text inputs with intuitive user interface.',
     link: 'https://github.com/toobajatoi/tone-switcher'
-  },
-  {
-    title: 'LLM Scheduling Engine',
-    description: 'Engineered a robust scheduling engine using FastAPI and Redis, achieving 99.9% uptime and 200ms response time for high-volume booking logic.'
   }
 ];
 
 const designProjects = [
-  {
-    title: 'Supportiyo Dashboard',
-    description: 'Designed and implemented a scalable dashboard for Supportiyo, leading the end-to-end UI/UX overhaul and increasing user engagement by 40%. Created intuitive user flows, responsive design systems, and seamless integration with backend services.',
-    link: 'https://www.behance.net/gallery/229851743/Supportiyo-UIUX-Case-Study'
-  },
   {
     title: 'DartMania - Mlabs',
     description: 'Designed and developed DartMania, a mobile game for M-Labs. Responsible for game mechanics, UI/UX, and asset creation using Unity, Figma, Illustrator, and Blender. Achieved 85% positive user feedback and implemented engaging gameplay loops, level design, and visual effects.',
