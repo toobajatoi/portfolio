@@ -22,9 +22,9 @@ const technicalProjects = [
     link: 'https://github.com/toobajatoi/jobflux'
   },
   {
-    title: 'EchoIQ',
-    description: 'An intelligent audio analysis platform that leverages machine learning to detect sarcasm and emotional nuances in real-time speech. Uses advanced audio processing techniques and trained models to provide accurate sentiment classification with high precision.',
-    link: 'https://github.com/toobajatoi/EchoIQ'
+    title: 'Emora - AI Mental Health Journal',
+    description: 'A full-stack, privacy-first journaling web app leveraging Python, Flask, and JavaScript to enable real-time emotion detection from voice and text inputs. Features include Whisper-based transcription, custom ML models for mood analysis, live spectrogram visualization using Web Audio API, and a modern, accessible glassmorphism UI - all while ensuring complete local data storage for user privacy.',
+    link: 'https://github.com/toobajatoi/Emora'
   },
   {
     title: 'SpeechTuner',
