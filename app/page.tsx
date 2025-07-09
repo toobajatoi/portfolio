@@ -24,7 +24,7 @@ const technicalProjects = [
   {
     title: 'EchoIQ',
     description: 'An intelligent audio analysis platform that leverages machine learning to detect sarcasm and emotional nuances in real-time speech. Uses advanced audio processing techniques and trained models to provide accurate sentiment classification with high precision.',
-    link: 'https://github.com/toobajatoi/real-time-sarcasm-detector'
+    link: 'https://github.com/toobajatoi/EchoIQ'
   },
   {
     title: 'LingoMod',
