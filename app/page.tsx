@@ -27,7 +27,7 @@ const technicalProjects = [
     link: 'https://github.com/toobajatoi/EchoIQ'
   },
   {
-    title: 'LingoMod',
+    title: 'SpeechTuner',
     description: 'A comprehensive language modification platform that analyzes and transforms both voice and text inputs. Features real-time emotion detection, sentiment analysis, and provides intuitive visualizations for enhanced communication insights.',
     link: 'https://github.com/toobajatoi/tone-switcher'
   }
@@ -66,11 +66,11 @@ const experiences = [
     emoji: "🤖",
     link: "https://www.linkedin.com/company/supportiyo/?viewAsMember=true",
     description: [
-      "Built real-time automation workflows using FastAPI, Redis, and third-party API integrations for scheduling and event handling.",
-      "Developed scalable backend APIs with support for calendar-based booking, webhook handling, and async task management.",
-      "Led R&D on NLP-based emotion and tone detection using transformer models, with support for multilingual inputs.",
-      "Spearheaded the redesign of a web platform's UI/UX, enhancing usability, responsiveness, and visual consistency across dashboard and marketing site.",
-      "Created a reusable design system and high-fidelity interactive prototypes, ensuring seamless collaboration between design and engineering teams."
+      "Designed and implemented real-time automation workflows using FastAPI, Redis, and third-party APIs to streamline platform operations and scheduling features.",
+      "Developed scalable backend infrastructure for calendar-based bookings, webhook event processing, and asynchronous task execution.",
+      "Contributed to R&D on natural language processing (NLP) systems focused on multilingual emotion and tone detection using transformer-based models.",
+      "Led the redesign of a cross-platform dashboard and marketing site, focusing on improving UI/UX consistency, responsiveness, and accessibility.",
+      "Built a reusable design system and interactive design prototypes to support handoff between design and development teams."
     ]
   },
   {
