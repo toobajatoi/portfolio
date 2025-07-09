@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Tooba Jatoi - Portfolio',
-  description: 'AI Research Architect & Creative Director',
+  description: 'AI Research Engineer & Creative Director',
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' }
