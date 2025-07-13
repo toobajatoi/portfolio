@@ -63,7 +63,7 @@ const designProjects = [
 
 const experiences = [
   {
-    title: "AI Engineer & Creative Designer",
+    title: "AI Research Architect & Creative Director",
     company: "Supportiyo",
     period: "Jul 2024 -- Jul 2025",
     location: "Remote",
@@ -281,7 +281,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-sm sm:text-base md:text-lg font-medium text-indigo-600 dark:text-indigo-400 mb-3 sm:mb-4 tracking-wider uppercase font-sans"
           >
-            AI Research Architect & Creative Director
+            AI Engineer & Creative Designer
           </motion.h4>
           <motion.h1 
             initial={{ opacity: 0 }}
