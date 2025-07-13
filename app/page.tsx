@@ -29,7 +29,7 @@ const technicalProjects = [
   {
     title: 'SpeechTuner',
     description: 'A comprehensive language modification platform that analyzes and transforms both voice and text inputs. Features real-time emotion detection, sentiment analysis, and provides intuitive visualizations for enhanced communication insights.',
-    link: 'https://github.com/toobajatoi/tone-switcher'
+    link: 'https://github.com/toobajatoi/SpeechTuner'
   }
 ];
 
@@ -53,12 +53,17 @@ const designProjects = [
     title: 'Guitar Music Video - 2D Stop Motion',
     description: 'Produced engaging 2D stop motion animation for music videos using Procreate for illustration and Adobe After Effects for editing. Created character designs, storyboards, and motion graphics that enhance storytelling and user engagement.',
     link: 'https://www.behance.net/gallery/206447077/GUITAR-Music-cover-album-2D-stop-motion'
+  },
+  {
+    title: 'Meezan Banking App Redesign UX case study',
+    description: 'Comprehensive UX case study for Meezan Bank mobile app redesign, focusing on user-centered design principles, accessibility improvements, and modern banking interface patterns. Conducted user research, created wireframes, and developed high-fidelity prototypes to enhance the digital banking experience.',
+    link: 'https://www.behance.net/gallery/230102929/Meezan-Banking-App-UX-Case-Study'
   }
 ];
 
 const experiences = [
   {
-    title: "AI Research Architect & Creative Director",
+    title: "AI Engineer & Creative Designer",
     company: "Supportiyo",
     period: "Jul 2024 -- Jul 2025",
     location: "Remote",
