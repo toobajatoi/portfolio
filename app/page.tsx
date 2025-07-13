@@ -35,6 +35,11 @@ const technicalProjects = [
 
 const designProjects = [
   {
+    title: 'Meezan Banking App Redesign UX case study',
+    description: 'Comprehensive UX case study for Meezan Bank mobile app redesign, focusing on user-centered design principles, accessibility improvements, and modern banking interface patterns. Conducted user research, created wireframes, and developed high-fidelity prototypes to enhance the digital banking experience.',
+    link: 'https://www.behance.net/gallery/230102929/Meezan-Banking-App-UX-Case-Study'
+  },
+  {
     title: 'DartMania - Mlabs',
     description: 'Designed and developed DartMania, a mobile game for M-Labs. Responsible for game mechanics, UI/UX, and asset creation using Unity, Figma, Illustrator, and Blender. Achieved 85% positive user feedback and implemented engaging gameplay loops, level design, and visual effects.',
     link: 'https://www.behance.net/gallery/206445581/Dart-Mania-Game-Promo-Video'
@@ -53,11 +58,6 @@ const designProjects = [
     title: 'Guitar Music Video - 2D Stop Motion',
     description: 'Produced engaging 2D stop motion animation for music videos using Procreate for illustration and Adobe After Effects for editing. Created character designs, storyboards, and motion graphics that enhance storytelling and user engagement.',
     link: 'https://www.behance.net/gallery/206447077/GUITAR-Music-cover-album-2D-stop-motion'
-  },
-  {
-    title: 'Meezan Banking App Redesign UX case study',
-    description: 'Comprehensive UX case study for Meezan Bank mobile app redesign, focusing on user-centered design principles, accessibility improvements, and modern banking interface patterns. Conducted user research, created wireframes, and developed high-fidelity prototypes to enhance the digital banking experience.',
-    link: 'https://www.behance.net/gallery/230102929/Meezan-Banking-App-UX-Case-Study'
   }
 ];
 
@@ -605,6 +605,17 @@ export default function Home() {
                         </div>
                         <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
                           <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Adobe Photoshop</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.title === 'Meezan Banking App Redesign UX case study' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Figma</span>
                         </div>
                       </div>
                     </div>
