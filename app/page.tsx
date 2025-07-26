@@ -40,6 +40,11 @@ const designProjects = [
     link: 'https://www.behance.net/gallery/230272315/Thaila-Brand-identity-UXUI-Case-Study'
   },
   {
+    title: 'Crumbz. | Branding & Visual Identity',
+    description: 'A cozy and playful visual identity for Crumbz, a cookie and coffee brand built to evoke warmth, comfort, and a hint of nostalgia. From logo to packaging, every element is designed with a crumbly charm and handcrafted feel to reflect the brand\'s homemade essence.',
+    link: 'https://www.behance.net/gallery/231185223/Crumbz-Cookie-Coffee-Branding-Visual-Identity'
+  },
+  {
     title: 'Meezan Banking App Redesign UX case study',
     description: 'Comprehensive UX case study for Meezan Bank mobile app redesign, focusing on user-centered design principles, accessibility improvements, and modern banking interface patterns. Conducted user research, created wireframes, and developed high-fidelity prototypes to enhance the digital banking experience.',
     link: 'https://www.behance.net/gallery/230102929/Meezan-Banking-App-UX-Case-Study'
@@ -607,6 +612,26 @@ export default function Home() {
                         </div>
                         <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
                           <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Procreate</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Adobe Photoshop</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {project.title === 'Crumbz. | Branding & Visual Identity' && (
+                    <div className="mt-4 flex items-center gap-3">
+                      <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Tools:</span>
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Figma</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Procreate</span>
+                        </div>
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                          <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Adobe Illustrator</span>
                         </div>
                         <div className="p-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
                           <span className="text-xs font-bold text-purple-700 dark:text-purple-300">Adobe Photoshop</span>

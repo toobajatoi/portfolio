@@ -160,6 +160,8 @@ section {
   .mobile-nav.closed {
     @apply translate-x-full;
   }
+
+
 }
 
 /* Hover Effects */
@@ -199,6 +201,8 @@ section {
     opacity: 1;
   }
 }
+
+
 
 /* Voice Command System Styles */
 .voice-command-container {
