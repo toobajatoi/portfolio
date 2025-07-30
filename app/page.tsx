@@ -5,9 +5,10 @@ import { useInView } from 'react-intersection-observer';
 import Navigation from '@/components/Navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { FaLinkedin, FaGithub, FaBehance, FaBriefcase, FaTools, FaGraduationCap, FaProjectDiagram, FaCertificate, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaBehance, FaBriefcase, FaTools, FaGraduationCap, FaProjectDiagram, FaCertificate, FaEnvelope, FaSpotify } from 'react-icons/fa';
 import { SiAdobeaftereffects } from 'react-icons/si';
 import { Typewriter } from 'react-simple-typewriter';
+import { useTheme } from 'next-themes';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -214,6 +215,7 @@ export default function Home() {
   const [shouldAnimate, setShouldAnimate] = useState(true);
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 100], [1, 0]);
+  const { theme } = useTheme();
 
   const isGithubPages = typeof window !== 'undefined' && window.location.hostname === 'toobajatoi.github.io';
   const bitmojiPath = process.env.NODE_ENV === 'production' ? '/portfolio/images/bitmoji.png' : '/images/bitmoji.png';
@@ -283,6 +285,13 @@ export default function Home() {
                 className="relative shadow-lg"
               />
               <div className="absolute inset-0 rounded-full bg-indigo-500/0 group-hover:bg-indigo-500/10 transition-colors duration-300" />
+              
+              {/* Tooltip */}
+              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-lg whitespace-nowrap">
+                Yes, I exist outside this portfolio — proof inside 🕵️‍♀️
+                {/* Tooltip arrow */}
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900 dark:border-t-gray-100"></div>
+              </div>
             </a>
           </motion.div>
           <motion.h4 
@@ -345,6 +354,34 @@ export default function Home() {
             >
               Copy Email
             </motion.button>
+          </motion.div>
+          
+          {/* Spotify Player */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            className="mt-8 sm:mt-12 w-full max-w-md mx-auto relative group"
+          >
+            <iframe 
+              data-testid="embed-iframe" 
+              style={{borderRadius: '12px'}} 
+              src="https://open.spotify.com/embed/track/0mEdbdeRFQwBhN4xfyIeUM?utm_source=generator" 
+              width="100%" 
+              height="152" 
+              frameBorder="0" 
+              allowFullScreen={true} 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
+              title="Spotify Track"
+            ></iframe>
+            
+            {/* Tooltip */}
+            <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-lg">
+              My brain's background music lol - you're welcome 😎
+              {/* Tooltip arrow */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900 dark:border-t-gray-100"></div>
+            </div>
           </motion.div>
         </motion.div>
       </section>
@@ -813,6 +850,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Spotify Section */}
+      <section id="spotify" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center gap-3 mb-6 sm:mb-8 justify-center relative"
+          >
+            <FaSpotify className="text-xl sm:text-2xl text-indigo-600 dark:text-indigo-400" />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-gray-900 dark:text-white font-sans relative">
+              Spotify
+            </h2>
+          </motion.div>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-12 leading-relaxed font-sans px-2 sm:px-0">
+            Check out my latest song on Spotify!
+          </p>
+          <div className="w-full max-w-md mx-auto">
+            <iframe 
+              data-testid="embed-iframe" 
+              style={{borderRadius: '12px'}} 
+              src="https://open.spotify.com/embed/track/7lQ8MOhq6IN2w8EYcFNSUk?utm_source=generator" 
+              width="100%" 
+              height="152" 
+              frameBorder="0" 
+              allowFullScreen={true} 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
+              title="Spotify Track"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -893,6 +964,8 @@ export default function Home() {
         <a href="https://www.behance.net/toobajatoi" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-white text-xl sm:text-2xl"><FaBehance /></a>
         <a href="http://github.com/toobajatoi" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white text-xl sm:text-2xl"><FaGithub /></a>
       </div>
+
+
     </div>
   );
 } 
