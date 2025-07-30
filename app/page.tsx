@@ -850,39 +850,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Spotify Section */}
-      <section id="spotify" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-3 mb-6 sm:mb-8 justify-center relative"
-          >
-            <FaSpotify className="text-xl sm:text-2xl text-indigo-600 dark:text-indigo-400" />
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-gray-900 dark:text-white font-sans relative">
-              Spotify
-            </h2>
-          </motion.div>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-12 leading-relaxed font-sans px-2 sm:px-0">
-            Check out my latest song on Spotify!
-          </p>
-          <div className="w-full max-w-md mx-auto">
-            <iframe 
-              data-testid="embed-iframe" 
-              style={{borderRadius: '12px'}} 
-              src="https://open.spotify.com/embed/track/7lQ8MOhq6IN2w8EYcFNSUk?utm_source=generator" 
-              width="100%" 
-              height="152" 
-              frameBorder="0" 
-              allowFullScreen={true} 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"
-              title="Spotify Track"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
