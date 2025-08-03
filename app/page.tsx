@@ -367,7 +367,7 @@ export default function Home() {
               data-testid="embed-iframe" 
               style={{borderRadius: '12px'}} 
               src="https://open.spotify.com/embed/track/0mEdbdeRFQwBhN4xfyIeUM?utm_source=generator" 
-              width="50%" 
+              width="100%" 
               height="152" 
               frameBorder="0" 
               allowFullScreen={true} 
